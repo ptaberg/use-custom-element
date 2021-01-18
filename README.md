@@ -15,7 +15,7 @@ Custom hook to bridge Custom Elements (Web Components) to React.
 
 In this scenario, we are using a specific [Dropdown Web Component](https://github.com/rwieruch/web-components-dropdown) as a React Dropdown Component. By using the custom React hook, we can provide all props in the right format to the custom element and register all event listeners (e.g. onChange from `props`) behind the scenes.
 
-```
+```JavaScript
 import React from 'react';
 
 // Web Component Use Case
@@ -33,7 +33,7 @@ const Dropdown = props => {
 
 Afterward, the Dropdown component can be used:
 
-```
+```JavaScript
 const props = {
   label: 'Label',
   option: 'option1',
@@ -51,7 +51,7 @@ return <Dropdown {...props} />;
 
 You can also define a custom mapping:
 
-```
+```JavaScript
 import React from 'react';
 
 // Web Component Use Case
